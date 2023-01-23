@@ -1,0 +1,6 @@
+Flask
+Flask-Session
+matplotlib
+tensorflow == 2.9.2
+numpy
+keras == 2.9.0
