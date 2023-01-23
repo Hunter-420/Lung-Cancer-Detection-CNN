@@ -3,30 +3,16 @@ AnaLUNG is a powerful web application designed to detect lung cancer using the l
 
 File Structure of Project
 ``` 
-analung
-   ├── static/
-   |   └── client_ctscan/
-   |       └── check_cancer.png
-   │   └── css/
-   |        └── style.css
-   |   └── img/
-   |        └── analung-about.png
-   |        └── analung-logo.png
-   |        └── lung-cancer-img.png
-   |   └── js/
-   |        └── script.js
-   |   └── test/
-   |        └── adenocarcinom
-   |        └── large.cell.carcinoma
-   |        └── normal
-   |        └── squamous.cell.carcinoma
-   │       
-   ├── templates/
-   │   └── index.html
-   │   
-   ├── api.py
-   ├── demo_of_lung_cancer_detection.py
-   ├── model_version3.hdf5
-   ├── README.md
-   └── requirements.txt
+├── Jupyter Notebook
+├── Python py Codes
+└── static
+    ├── client_ctscan
+    ├── css
+    ├── img
+    ├── js
+    └── test
+        ├── adenocarcinoma
+        ├── large.cell.carcinoma
+        ├── normal
+        └── squamous.cell.carcinoma
 ```
