@@ -26,7 +26,6 @@ analung
    │   
    ├── api.py
    ├── demo_of_lung_cancer_detection.py
-   ├── errorlog.txt
    ├── model_version3.hdf5
    ├── README.md
    └── requirements.txt
