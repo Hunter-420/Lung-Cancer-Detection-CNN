@@ -5,14 +5,15 @@ File Structure of Project
 ``` 
 ├── Jupyter Notebook
 ├── Python py Codes
-└── static
-    ├── client_ctscan
-    ├── css
-    ├── img
-    ├── js
-    └── test
-        ├── adenocarcinoma
-        ├── large.cell.carcinoma
-        ├── normal
-        └── squamous.cell.carcinoma
+├── static
+│   ├── client_ctscan
+│   ├── css
+│   ├── img
+│   ├── js
+│   └── test
+│       ├── adenocarcinoma
+│       ├── large.cell.carcinoma
+│       ├── normal
+│       └── squamous.cell.carcinoma
+└── templates
 ```
