@@ -42,7 +42,7 @@ Overall accuracy is : 79.05%
 
 Adenocarcinoma          cancer detection accuracy is : 90.00%
 Large cell carcinoma    cancer detection accuracy is : 70.59%
-Normal                  chest detection accuracy is : 98.15%
+Normal                  chest detection accuracy  is : 98.15%
 Squamous cell carcinoma cancer detection accuracy is : 57.78%
 
 Confusion Matrix :
