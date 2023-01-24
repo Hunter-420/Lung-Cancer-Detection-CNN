@@ -58,4 +58,5 @@ squamous.cell.carcinoma	34	4	0	52
 ## Train vs Validation 
 ![accuracy graph](https://raw.githubusercontent.com/cosmicgz/AnaLUNG/main/static/img/accuracy.png)
 
-# Project by C-ENGINE
+<hr>
+Project by C-ENGINE
