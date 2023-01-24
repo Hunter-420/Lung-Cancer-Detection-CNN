@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link
+      type="image/png"
+      sizes="120x120"
+      rel="icon"
+      href="./analung/assets/img/analung-logo.png"
+    />
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>AnaLUNG</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="./assets/img/analung-logo.png" alt="" width="100" height="100">
+
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
+                <a class="mr-5 hover:text-gray-900" href="#about">About</a>
+                <a class="mr-5 hover:text-gray-900" href="#workflow">Workflow</a>
+                <a class="mr-5 hover:text-gray-900" href="#contact">Contact</a>
+
+            </nav>
+
+            <div
+                class="upload-btn-wrapper nline-flex items-center bg-lime-700 text-white border-1 py-1 px-3 ocus:outline-none hover:bg-lime-600 rounded text-lg mt-4 md:mt-0">
+
+                Upload
+                CT Scan 
+                Image
+
+
+                <input type="file" id="actual-btn" />
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- midsection/ about -->
+    <section class="text-gray-600 body-font" id="about">
+        <div class="container mx-auto flex px-5 py-14 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="./assets/img/analung-about.png">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">What is AnaLUNG?
+
+                </h1>
+                <p class="mb-8 leading-relaxed">AnaLUNG is a powerful web application designed to detect lung cancer
+                    using the latest convolutional neural network technology and DICOM imaging. Our state-of-the-art
+                    system is trained to identify signs of lung cancer in DICOM scans, providing doctors and patients
+                    with accurate and reliable results. With AnaLUNG, healthcare professionals can quickly and easily
+                    detect lung cancer in its early stages, leading to more successful treatment outcomes. Our
+                    user-friendly interface makes it easy for doctors and radiologists to upload and analyze DICOM
+                    scans, and our advanced algorithms provide highly accurate results. Trust AnaLUNG to provide the
+                    best possible care for your patients and help save lives.</p>
+
+                <div
+                    class="upload-btn-wrapper inline-flex items-center bg-lime-700 text-white border-1 py-1 px-3 ocus:outline-none hover:bg-lime-600 rounded text-lg mt-4 md:mt-0">
+
+                    Upload
+                    CT Scan
+                    Image
+
+
+                    <input type="file" id="actual-btn" />
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- how we works -->
+    <section class="text-gray-600 body-font" id="workflow">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <!-- <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2> -->
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">How AnaLUNG works?
+                </h1>
+            </div>
+
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-lime-600 text-white flex-shrink-0">
+                                <i class="fa-solid fa-upload"></i>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Upload</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">AnaLUNG allows users to upload CT scan DICOM files of
+                                lung tumors for detection and analysis.<span id="dots1">...</span><span id="more1"> The
+                                    process is simple and user-friendly, with the ability to upload multiple DICOM files
+                                    at once. Our advanced algorithms will then analyze the scans for signs of lung
+                                    cancer and provide accurate results. This feature enables doctors and radiologists
+                                    to quickly and easily detect lung cancer in its early stages, leading to more
+                                    successful treatment outcomes. Trust AnaLUNG to provide the best possible care for
+                                    your patients and help save lives.</span></p>
+
+                            <a class="mt-3 text-lime-600 inline-flex items-center" onclick="readMoreFunction1()"
+                                id="myBtn"><button>Read More</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-lime-600 text-white flex-shrink-0">
+                                <i class="fa-sharp fa-solid fa-bars-progress"></i>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Process</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">AnaLUNG uses the latest convolutional neural network
+                                technology to process CT scan DICOM files of lung tumors for detection and
+                                analysis.<span id="dots2">...</span><span id="more2"> The process involves feeding the
+                                    DICOM images through the neural network, which has been trained on a large dataset
+                                    of lung scans to identify patterns and signs of cancer. The convolutional neural
+                                    network is able to analyze the images and detect any abnormalities, providing
+                                    accurate and reliable results. This advanced method of processing DICOM images
+                                    allows for early detection of lung cancer, leading to more successful treatment
+                                    outcomes. Trust AnaLUNG to provide the best possible care for your patients and help
+                                    save lives.</span></p>
+
+                            <a class="mt-3 text-lime-600 inline-flex items-center" onclick="readMoreFunction2()"
+                                id="myBtn"><button>Read More</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-lime-600 text-white flex-shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Result</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">AnaLUNG provides accurate and reliable results for
+                                processed DICOM files of lung tumors using convolutional neural network technology.<span
+                                    id="dots3">...</span><span id="more3"> The results will indicate whether the scanned
+                                    images contain signs of lung cancer or not. The output can be in the form of a
+                                    report, visual representation, or a probability score. These results are designed to
+                                    be easy to understand for healthcare professionals, so they can make informed
+                                    decisions about the next steps in the patient's treatment. Trust AnaLUNG to provide
+                                    the best possible care for your patients and help save lives.</span></p>
+
+                            <a class="mt-3 text-lime-600 inline-flex items-center" onclick="readMoreFunction3()"
+                                id="myBtn"><button>Read More</button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="text-gray-600 body-font relative" id="contact">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Contact us for any inquiries or support related to
+                    AnaLUNG.
+                </p>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                            <textarea id="message" name="message"
+                                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <button
+                            class="flex mx-auto text-white bg-lime-700 border-0 py-2 px-8 focus:outline-none hover:bg-lime-600 rounded text-lg">Submit</button>
+                    </div>
+                    <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                        <a class="text-indigo-500">contact@analung.com</a>
+                        <p class="leading-normal my-5">Hospital Street
+                            <br>Kathmandu, Nepal
+                        </p>
+                        <span class="inline-flex">
+                            <a class="text-gray-500">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-4 text-gray-500">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="ml-4 text-gray-500">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                </svg>
+                            </a>
+                            <a class="ml-4 text-gray-500">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2023 AnaLUNG
+
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <img src="./assets/img/analung-logo.png" alt="AnaLUNG_logo" width="90" height="90">
+
+                </a>
+            </span>
+
+        </div>
+    </footer>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3a5f8e8284.js" crossorigin="anonymous"></script>
+    <!-- script  -->
+    <script src="./assets/js/script.js"></script>
+    <!-- tailwind play cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
