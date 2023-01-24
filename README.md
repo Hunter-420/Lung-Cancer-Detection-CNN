@@ -19,8 +19,20 @@ AnaLUNG is a powerful web application designed to detect lung cancer using the l
 ```
 
 ## How to use it?
-At first clone this repo
+At first clone this repo for that open your terminal and pase following command
 ``` shell
-https://github.com/Hunter-420/Lung-Cancer-Detection-Using-CNN.git
+git clone https://github.com/Hunter-420/Lung-Cancer-Detection-Using-CNN.git
+```
+
+Go to the cloned directory and install requirements for this project
+I'm assuming that you already install python 3.9 in your local machine
+To install requirement
+``` shell
+pip install requirements.txt
+```
+
+Wait untill all the requirements are installed then after that execute the main file api.py
+``` shell
+python api.py
 ```
 
