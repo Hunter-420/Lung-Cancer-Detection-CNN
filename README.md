@@ -28,7 +28,7 @@ Go to the cloned directory and install requirements for this project
 I'm assuming that you already install python 3.9 in your local machine
 To install requirement
 ``` shell
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 Wait untill all the requirements are installed then after that execute the main file api.py
