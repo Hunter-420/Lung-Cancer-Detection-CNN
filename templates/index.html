@@ -39,12 +39,10 @@
             <div
                 class="upload-btn-wrapper nline-flex items-center bg-lime-700 text-white border-1 py-1 px-3 ocus:outline-none hover:bg-lime-600 rounded text-lg mt-4 md:mt-0">
 
-                Upload
-                CT Scan 
-                Image
-
-
-                <input type="file" id="actual-btn" />
+                <form method=post enctype=multipart/form-data id="getinfo">
+                    <input type=file name=image onchange=form.submit() />
+                    <input type="submit" value="Upload CT Scan Image" > 
+                </form>
             </div>
 
         </div>
@@ -74,17 +72,20 @@
                 <div
                     class="upload-btn-wrapper inline-flex items-center bg-lime-700 text-white border-1 py-1 px-3 ocus:outline-none hover:bg-lime-600 rounded text-lg mt-4 md:mt-0">
 
-                    Upload
-                    CT Scan
-                    Image
-
-
-                    <input type="file" id="actual-btn" />
+                    <form method=post enctype=multipart/form-data id="getinfo">
+                        <input type=file name=image onchange=form.submit() />
+                        <input type="submit" value="Upload CT Scan Image" > 
+                    </form>
+                      <br>
                 </div>
 
-                
-
-            </div>
+                <div class="card" style="width: 18rem;">
+                        <!-- <img src="./../static/client_ctscan/cancer.png" class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                          <p class="card-text">{{prediction}}</p>
+                        </div>
+                      </div>
+                </div>
         </div>
     </section>
 
@@ -108,7 +109,7 @@
                             <h2 class="text-gray-900 text-lg title-font font-medium">Upload</h2>
                         </div>
                         <div class="flex-grow">
-                            <p class="leading-relaxed text-base">AnaLUNG allows users to upload CT scan DICOM files of
+                            <p class="leading-relaxed text-base">AnaLUNG allows users to upload CT scan  files for
                                 lung tumors for detection and analysis.<span id="dots1">...</span><span id="more1"> The
                                     process is simple and user-friendly, with the ability to upload multiple DICOM files
                                     at once. Our advanced algorithms will then analyze the scans for signs of lung
@@ -135,12 +136,12 @@
                         </div>
                         <div class="flex-grow">
                             <p class="leading-relaxed text-base">AnaLUNG uses the latest convolutional neural network
-                                technology to process CT scan DICOM files of lung tumors for detection and
+                                technology to process CT scan files forlung tumors for detection and
                                 analysis.<span id="dots2">...</span><span id="more2"> The process involves feeding the
-                                    DICOM images through the neural network, which has been trained on a large dataset
+                                    CT Scan images through the neural network, which has been trained on a large dataset
                                     of lung scans to identify patterns and signs of cancer. The convolutional neural
                                     network is able to analyze the images and detect any abnormalities, providing
-                                    accurate and reliable results. This advanced method of processing DICOM images
+                                    accurate and reliable results. This advanced method of processing images
                                     allows for early detection of lung cancer, leading to more successful treatment
                                     outcomes. Trust AnaLUNG to provide the best possible care for your patients and help
                                     save lives.</span></p>
@@ -163,7 +164,7 @@
                         </div>
                         <div class="flex-grow">
                             <p class="leading-relaxed text-base">AnaLUNG provides accurate and reliable results for
-                                processed DICOM files of lung tumors using convolutional neural network technology.<span
+                                processed CT Scan files of lung tumors using convolutional neural network technology.<span
                                     id="dots3">...</span><span id="more3"> The results will indicate whether the scanned
                                     images contain signs of lung cancer or not. The output can be in the form of a
                                     report, visual representation, or a probability score. These results are designed to
