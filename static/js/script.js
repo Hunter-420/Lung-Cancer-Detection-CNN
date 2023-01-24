@@ -1,7 +1,7 @@
-function myFunction1() {
+function readMoreFunction1() {
     var dots = document.getElementById("dots1");
     var moreText = document.getElementById("more1");
-    var btnText = document.getElementById("myBtn");
+    var btnText = document.getElementById("myBtn1");
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
@@ -13,10 +13,10 @@ function myFunction1() {
         moreText.style.display = "inline";
     }
 }
-function myFunction2() {
+function readMoreFunction2() {
     var dots = document.getElementById("dots2");
     var moreText = document.getElementById("more2");
-    var btnText = document.getElementById("myBtn");
+    var btnText = document.getElementById("myBtn2");
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
@@ -28,10 +28,10 @@ function myFunction2() {
         moreText.style.display = "inline";
     }
 }
-function myFunction3() {
+function readMoreFunction3() {
     var dots = document.getElementById("dots3");
     var moreText = document.getElementById("more3");
-    var btnText = document.getElementById("myBtn");
+    var btnText = document.getElementById("myBtn3");
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
