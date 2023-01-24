@@ -1,5 +1,5 @@
 # AnaLUNG
-AnaLUNG is a powerful web application designed to detect lung cancer using the latest convolutional neural network technology and DICOM imaging. Our state-of-the-art system is trained to identify signs of lung cancer in DICOM scans, providing doctors and patients with accurate and reliable results. With AnaLUNG, healthcare professionals can quickly and easily detect lung cancer in its early stages, leading to more successful treatment outcomes. Our user-friendly interface makes it easy for doctors and radiologists to upload and analyze DICOM scans, and our advanced algorithms provide highly accurate results. Trust AnaLUNG to provide the best possible care for your patients and help save lives.
+AnaLUNG is a powerful web application designed to detect lung cancer using the latest convolutional neural network technology and CT Scan imaging. Our state-of-the-art system is trained to identify signs of lung cancer in DICOM scans, providing doctors and patients with accurate and reliable results. With AnaLUNG, healthcare professionals can quickly and easily detect lung cancer in its early stages, leading to more successful treatment outcomes. Our user-friendly interface makes it easy for doctors and radiologists to upload and analyze CT scans, and our advanced algorithms provide highly accurate results. Trust AnaLUNG to provide the best possible care for your patients and help save lives.
 
 ## File Structure of Project
 ``` 
@@ -36,3 +36,20 @@ Wait untill all the requirements are installed then after that execute the main 
 python api.py
 ```
 
+## Accuracy of our model 
+```
+Overall accuracy is : 79.05%
+
+Adenocarcinoma          cancer detection accuracy is : 90.00%
+Large cell carcinoma    cancer detection accuracy is : 70.59%
+Normal                  chest detection accuracy is : 98.15%
+Squamous cell carcinoma cancer detection accuracy is : 57.78%
+
+Confusion Matrix :
+                        0	1	2	3
+adenocarcinoma	        108	12	0	0
+large.cell.carcinoma	15	36	0	0
+normal	                0	1	53	0
+squamous.cell.carcinoma	34	4	0	52
+
+```
