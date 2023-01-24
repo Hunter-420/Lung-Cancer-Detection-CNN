@@ -54,8 +54,8 @@ normal	                0	1	53	0
 squamous.cell.carcinoma	34	4	0	52
 
 ```
-## <br /> <br />
-##Train vs Validation 
+## 
+## Train vs Validation 
 ![accuracy graph](https://raw.githubusercontent.com/cosmicgz/AnaLUNG/main/static/img/accuracy.png)
 
-#Project by C-ENGINE
+# Project by C-ENGINE
