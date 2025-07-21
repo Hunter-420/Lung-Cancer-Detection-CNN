@@ -1,6 +1,7 @@
 Flask
 Flask-Session
 matplotlib
-tensorflow == 2.9.2
+tensorflow
 numpy
-keras == 2.9.0 
+keras 
+keras_preprocessing
