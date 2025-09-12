@@ -21,7 +21,7 @@ app = Flask(__name__, template_folder="templates")
 
 @app.route("/", methods=["GET", "POST"])
 def upload_predict():
-    model = load_model('model_version3.hdf5')
+    model = load_model('finalmodel-ResNet50.keras')
     if request.method == 'POST':
         image_file = request.files["image"]
         if image_file:
@@ -58,4 +58,4 @@ def generate_custom_name(original_file_name):
 
 
 if __name__ == "__main__":
-    app.run(port=12000, debug=True)
+    app.run(host='0.0.0.0', port=12000, debug=True)

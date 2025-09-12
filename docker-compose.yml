@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    container_name: lung-cancer-app
+    ports:
+      - "12000:12000"
+    volumes:
+      - .:/app 
+    environment:
+      - FLASK_ENV=development
+    command: python api.py
+
